@@ -91,7 +91,9 @@ Step 7: Response Generation
 
 The retrieved context is passed to the LLM to generate grounded answers.
 
+
 📊 Experimental Results
+
 
 The project evaluated different chunk sizes to analyze retrieval performance.
 
@@ -106,6 +108,7 @@ Key Insights
 Smaller chunks improve factual precision.
 Larger chunks provide richer context.
 Hybrid chunking offers balanced performance.
+
 🎯 Objectives
 
 The system was designed with the following goals:
@@ -124,6 +127,7 @@ Voice AI Tutor
 Personalized Learning
 Multimodal RAG
 Cloud Deployment
+
 ✅ Conclusion
 
 This project demonstrates how Retrieval-Augmented Generation (RAG) can transform traditional study material into an interactive AI-powered learning assistant. By integrating semantic retrieval with LLMs, the system provides accurate, fast, and context-aware answers directly from educational documents.
