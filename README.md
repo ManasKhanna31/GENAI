@@ -27,6 +27,7 @@ The platform converts uploaded documents into an intelligent searchable knowledg
 
 The RAG pipeline follows these steps:
 
+
 Upload Documents
 Extract Text
 Chunk Text
@@ -34,7 +35,9 @@ Generate Embeddings
 Store in FAISS Vector Database
 Retrieve Relevant Chunks
 Generate Answers using LLM
+
 🛠️ Technologies Used
+
 Programming Language
 Python
 Libraries & Frameworks
@@ -48,7 +51,9 @@ Text Chunking
 RecursiveCharacterTextSplitter
 Vector Database
 FAISS
+
 📂 Project Workflow
+
 Step 1: Document Upload
 
 Users upload study material in:
@@ -69,6 +74,7 @@ splitter = RecursiveCharacterTextSplitter(
     chunk_size=200,
     chunk_overlap=50
 )
+
 Step 4: Embedding Generation
 
 Each chunk is converted into vector embeddings using HuggingFace embeddings.
@@ -76,11 +82,13 @@ Each chunk is converted into vector embeddings using HuggingFace embeddings.
 embedding_model = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
+
 Step 5: FAISS Vector Store Creation
 vectorstore = FAISS.from_documents(
     chunks,
     embedding_model
 )
+
 Step 6: Semantic Retrieval
 
 Relevant chunks are retrieved based on query similarity.
@@ -89,6 +97,7 @@ docs = vectorstore.similarity_search(
     question,
     k=3
 )
+
 Step 7: Response Generation
 
 The retrieved context is passed to the LLM to generate grounded answers.
