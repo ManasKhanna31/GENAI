@@ -14,7 +14,9 @@ Large Language Models (LLMs)
 
 The platform converts uploaded documents into an intelligent searchable knowledge base and allows users to ask questions conversationally.
 
+
 🚀 Features
+
 📄 Upload and process PDF & DOCX files
 💬 Natural language question-answering
 🔍 Semantic search using embeddings
